@@ -1,13 +1,19 @@
-// Write a C program to perform input/output of all basic data types
-// tipos primitivos >> var, const, float, double, char, etc...
-
-// Every C program is divided in 4 parts: 1) Pre processor directive,
-// 2) Main function 3) Assembly of compiled code and 4) Linking
-
-// include: pre processor and delivers the file i insert to our source code
-//          a small software thar accepts C source file and performs tasks
-//          such remove comments from the source code, macro expansion,
-//          expansion of included header files.
-
-#include <stdio.h>
-
+// C Output;
+#include <stdio.h>    
+int main()
+{ 
+    // Displays the string inside quotations
+    printf("C Programming\n");
+    // Integer Output;
+    int testInteger = 5;
+    printf("Number = %d\n", testInteger);
+    // Float and Double Output
+    float number1 = 13.5;
+    double number2 = 12.4;
+    printf("number1 = %f\n", number1);
+    printf("number2 = %f\n", number2);
+    // Print Characters
+    char chr = 'a';
+    printf("character = %c\n", chr);
+    return 0;
+}

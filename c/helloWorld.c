@@ -1,6 +1,6 @@
 /*My first C program to print Hello, World!*/
 
-// pre-processor directive -include process before compilation process
+// pre-processor directive include process before compilation process
 // <stdio.h> contains various input-output functions
 
 #include <stdio.h> 
