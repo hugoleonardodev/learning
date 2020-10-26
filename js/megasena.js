@@ -38,3 +38,24 @@ for (let indexMega = 0; indexMega < megaSenaNumbers.length; indexMega += 1) {
 console.log(`Mega-Sena: ${megaSenaNumbers}`);
 console.log("Class 08 play: " + class08play);
 console.log("Number of hits: " + numberOfHits);
+
+// for N class plays, another for is needed with
+// the plays inside a new array called megaSenaGames
+// this arrays contains another arrays
+// so that we can make N tests for N plays
+
+let class08play2 = [13, 21, 24, 35, 45, 54];
+let class08play3 = [ 2, 3, 6, 14, 15, 17];
+
+let megaSenaGames2 = [class08play, class08play2, class08play3];
+for (let games = 0; games < megaSenaNumbers.length; games += 1) {
+    let numberOfHits2 =0;
+    for (let indexMega2 = 0; indexMega2 < megaSenaGames2[games]; indexMega2 += 1) {
+        for (let indexPlay2 = 0; indexPlay2 < megaSenaGames2[games]; indexPlay2 +=1) {
+            if (megaSenaNumbers[indexMega2] === megaSenaGames2[games]) {
+                numberOfHits2 =+ 1;
+            }
+        }
+    }
+    console.log(numberOfHits2);
+}
