@@ -25,9 +25,16 @@ for (let indexTest = 0; indexTest < class08play.length; indexTest += 1) {
     console.log(indexTest);
 }
 // Comparing each element from array class08play with
-// the megaSenaNumbers array
+// the megaSenaNumbers array and number of hits
+let numberOfHits = 0;
 for (let indexMega = 0; indexMega < megaSenaNumbers.length; indexMega += 1) {
     for (let indexPlay = 0; indexPlay < class08play.length; indexPlay += 1) {
-
+        if (megaSenaNumbers[indexMega] === class08play[indexPlay]) {
+            numberOfHits += 1;
+        }
     }
 }
+// Printing results
+console.log(`Mega-Sena: ${megaSenaNumbers}`);
+console.log("Class 08 play: " + class08play);
+console.log("Number of hits: " + numberOfHits);
