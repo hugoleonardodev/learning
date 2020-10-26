@@ -21,7 +21,13 @@ let megaSenaNumbers = [firstNumber, secondNumber, thirdNumber, fourthNumber, fif
 // Verifying each number from the Class 08 array with 
 // the six random numbers
 let class08play = [4, 8, 15, 16, 23, 42];
-for (let indexPlay = 0; indexPlay < class08play.length; indexPlay += 1) {
-    console.log(indexPlay);
+for (let indexTest = 0; indexTest < class08play.length; indexTest += 1) {
+    console.log(indexTest);
 }
+// Comparing each element from array class08play with
+// the megaSenaNumbers array
+for (let indexMega = 0; indexMega < megaSenaNumbers.length; indexMega += 1) {
+    for (let indexPlay = 0; indexPlay < class08play.length; indexPlay += 1) {
 
+    }
+}
