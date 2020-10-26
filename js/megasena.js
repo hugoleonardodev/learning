@@ -14,7 +14,14 @@ let thirdNumber = Math.ceil(Math.random() * 60);
 let fourthNumber = Math.ceil(Math.random() * 60);
 let fifthNumber = Math.ceil(Math.random() * 60);
 let sixthNumber = Math.ceil(Math.random() * 60);
-
-console.log(fifthNumber, secondNumber, thirdNumber, fourthNumber, fifthNumber, sixthNumber);
-
+// Printing numbers for testing
+console.log(firstNumber, secondNumber, thirdNumber, fourthNumber, fifthNumber, sixthNumber);
+// Creating an Array for the Mega Sena numbers
+let megaSenaNumbers = [firstNumber, secondNumber, thirdNumber, fourthNumber, fifthNumber, sixthNumber];
+// Verifying each number from the Class 08 array with 
+// the six random numbers
+let class08play = [4, 8, 15, 16, 23, 42];
+for (let indexPlay = 0; indexPlay < class08play.length; indexPlay += 1) {
+    console.log(indexPlay);
+}
 
