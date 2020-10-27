@@ -25,10 +25,22 @@ for (let rightSuperior = 1; rightSuperior < 8; rightSuperior += 1) {
     if (queenLine > 8 || queenColunm > 8) {
         break;
     }
+}
+//checking left up diagonal
+for (let leftSuperior = 1; leftSuperior < 8; leftSuperior += 1) {
+    let queenLine = queenPositionLine + leftSuperior;
+    let queenColunm = queenPositionColunm - leftSuperior;
+//checking the limit of the movement, if > 8, break
+    if (queenLine > 8 || queenColunm < 1) {
+        break;
+    }
 //cheking if can atack or not
     if ((peonPositionLine === queenLine) && (peonPositionColunm === queenColunm)) {
         canAtack = true;
     }
 }
+// check left down diagonal
+
+// check right down diagonal
 
 console.log(canAtack);
