@@ -8,3 +8,9 @@ let pizzas = {
 for (let key in pizzas) {
     console.log(pizzas['bordaCatupiry']);
 }
+
+let pizzasDoces = ['chocolate', 'banana', 'morango'];
+
+for (let key in pizzasDoces) {
+    console.log(key, pizzasDoces[key]);
+}
