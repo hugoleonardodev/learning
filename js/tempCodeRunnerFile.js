@@ -1,8 +1,17 @@
-function geraArray (caracter) {
-    let array = [];
-    for (let index = 0; index < 100; index += 1) {
-        array.push(caracter);
-    }
-    return array;
+let firstNumber = randomNumber(90);
+//...
+
+function randomNumber (maxValue) {
+    return Math.ceil(Math.random() * masValue);
 };
-console.log(geraArray('$'));
+
+function generateNumber () {
+    let numbers = [];
+    for (let index = 0; index < 6; index += 1) {
+        numbers.push(randomNumber(60));
+    }
+    return numbers;
+};
+
+let megaSenaNumbers = generateNumber();
+console.log(megaSenaNumbers);
