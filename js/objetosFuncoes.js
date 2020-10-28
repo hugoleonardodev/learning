@@ -29,3 +29,16 @@ for (let key in estudante) {
 for (let key in estudante) {
     console.log(key, estudante[key]);
 }
+
+function trybe(estudanteTrybe) {
+    let pessoaDesenvolvedora = estudanteTrybe;
+    
+    pessoaDesenvolvedora.hardSkills = 9;
+    pessoaDesenvolvedora.softSkills = 7;
+    pessoaDesenvolvedora.carreiraSkills = 10;
+    pessoaDesenvolvedora.tryber = true;
+
+    return pessoaDesenvolvedora;
+};
+
+console.log(trybe(estudante));
