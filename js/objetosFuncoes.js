@@ -17,7 +17,7 @@ estudante.enderco = {
 }
 
 console.log(estudante);
-
+// exibindo as keys
 for (let key in estudante) {
     console.log(key);
 }
@@ -29,7 +29,8 @@ for (let key in estudante) {
 for (let key in estudante) {
     console.log(key, estudante[key]);
 }
-
+// atribuindo outros valores ao objeto estudante com
+// com a funcao trybe e depois imprimindo com console.log
 function trybe(estudanteTrybe) {
     let pessoaDesenvolvedora = estudanteTrybe;
     
@@ -42,3 +43,4 @@ function trybe(estudanteTrybe) {
 };
 
 console.log(trybe(estudante));
+
