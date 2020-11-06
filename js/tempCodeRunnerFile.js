@@ -1,17 +1,16 @@
-let firstNumber = randomNumber(90);
-//...
-
-function randomNumber (maxValue) {
-    return Math.ceil(Math.random() * masValue);
+//pedido de pizza
+let pizzas = {
+    sabor: "Palmito",
+    preco: 39.90,
+    bordaCatupiry: true
 };
 
-function generateNumber () {
-    let numbers = [];
-    for (let index = 0; index < 6; index += 1) {
-        numbers.push(randomNumber(60));
-    }
-    return numbers;
-};
+for (let key in pizzas) {
+    console.log(pizzas['bordaCatupiry']);
+}
 
-let megaSenaNumbers = generateNumber();
-console.log(megaSenaNumbers);
+let pizzasDoces = ['chocolate', 'banana', 'morango'];
+
+for (let key in pizzasDoces) {
+    console.log(key, pizzasDoces[key]);
+}

@@ -1,9 +1,9 @@
-var linhaDeAsteriscos = "";
-var n = 15;
+var n = 5;
 for (var index = 0; index < 1; index++){
-for (var linha = 0; linha < n; linha++){
-    linhaDeAsteriscos += " *";
-    console.log(linhaDeAsteriscos);
+    var linhaDeAsteriscos = "";
+    for (var linha = n; linha > 0; linha--){
+        linhaDeAsteriscos += " *";
+        console.log(linhaDeAsteriscos);
     }
 }
 
